@@ -7,14 +7,17 @@ import Newproject from './components/pages/Newproject';
 function App() {
   return (
     <Router>
-      <ul>
+      <div>
         <Link to="/">Home</Link>
-      </ul>
+        <Link to="/contact">Contact</Link>
+        <Link to="/company">Company</Link>
+        <Link to="/newproject">Novo projeto</Link>
+      </div>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/company" element={<Company/>}></Route>
-        <Route path="/contact"></Route>
-        <Route path="/newproject"></Route>
+        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/newproject" element={<Newproject/>}></Route>
       </Routes>
       <p>Footer</p>
     </Router>
