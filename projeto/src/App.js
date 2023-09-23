@@ -8,7 +8,7 @@ import Container from './components/pages/layout/Container';
 
 function App() {
   return (
-    <container>
+    <Container customClass="min-height">
     <Router>
       <div>
         <Link to="/">Home</Link>
@@ -24,8 +24,10 @@ function App() {
       </Routes>
     <p>Footer</p>
     </Router>
-    </container>
+    </Container>
   );
 }
 
+
 export default App;
+
