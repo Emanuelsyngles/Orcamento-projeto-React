@@ -1,4 +1,6 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import Home from './components/pages/Home';
+import Company from './components/pages/Company';
 
 function App() {
   return (
@@ -8,8 +10,8 @@ function App() {
         <li>Contado</li>
       </ul>
       <Routes>
-        <Route path="/"></Route>
-        <Route path="/company"></Route>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/company" element={<Company/>}></Route>
         <Route path="/contact"></Route>
         <Route path="/newproject"></Route>
       </Routes>
