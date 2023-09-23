@@ -4,8 +4,11 @@ import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import Newproject from './components/pages/Newproject';
 
+import Container from './components/pages/layout/Container';
+
 function App() {
   return (
+    <container>
     <Router>
       <div>
         <Link to="/">Home</Link>
@@ -19,8 +22,9 @@ function App() {
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/newproject" element={<Newproject/>}></Route>
       </Routes>
-      <p>Footer</p>
+    <p>Footer</p>
     </Router>
+    </container>
   );
 }
 
