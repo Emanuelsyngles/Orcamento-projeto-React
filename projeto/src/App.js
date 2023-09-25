@@ -5,24 +5,21 @@ import Contact from './components/pages/Contact';
 import Newproject from './components/pages/Newproject';
 
 import Container from './components/pages/layout/Container';
+import Navbar from './components/pages/layout/Navbar';
+import Footer from './components/pages/layout/Footer';
 
 function App() {
   return (
     <Container customClass="min-height">
     <Router>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contato</Link>
-        <Link to="/company">Empresa</Link>
-        <Link to="/newproject">Novo projeto</Link>
-      </div>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/company" element={<Company/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/newproject" element={<Newproject/>}></Route>
       </Routes>
-    <p>Footer</p>
+    <Footer/>
     </Router>
     </Container>
   );
